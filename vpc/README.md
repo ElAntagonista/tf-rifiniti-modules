@@ -12,8 +12,8 @@
 
 | Name | Description |
 |------|-------------|
-| ecr\_vpc\_ept\_id |  |
-| ecr\_vpc\_ept\_sg\_ids |  |
+| ecr\_vpc\_ept\_id | ECR id |
+| ecr\_vpc\_ept\_sg\_ids | ECR vpc endpoint Security group id(s) |
 | private\_subnet\_cidr\_blocks | Private subnet(s) cidr block(s) |
 | private\_subnet\_ids | Private subnet(s) id |
 | public\_subnet\_cidr\_blocks | Public subnet(s) cidr block(s) |
