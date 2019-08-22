@@ -5,21 +5,34 @@ This repository contains terraform modules used for creating a production ready 
 
 # Repository structure
 ```
-tf-rifiniti-modules
-├─ .gitignore
-├─ README.md
-└─ common
-   └─ terraform-aws-rs
+└─ tf-rifiniti-modules
+   ├─ .git
+   ├─ .gitignore
+   ├─ README.md
+   ├─ alb
+   ├─ common
+   │  └─ terraform-aws-rs
+   │     ├─ README.md
+   │     ├─ main.tf
+   │     ├─ output.tf
+   │     └─ variables.tf
+   ├─ ecr
+   ├─ ecs
+   ├─ security
+   └─ vpc
+      ├─ README.md
       ├─ main.tf
-      ├─ output.tf
+      ├─ outputs.tf
       └─ variables.tf
 ```
+
 # Modules list
 - [terraform-aws-rs](##terraform-aws-rs)
-
+- [vpc](##vpc)
 
 # Modules
 
 ## terraform-aws-rs
-
+ 
+## vpc
 
