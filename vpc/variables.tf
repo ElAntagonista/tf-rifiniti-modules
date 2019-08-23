@@ -11,16 +11,16 @@ variable "az_count" {
 
 variable "enable_vpc_dns_hostname" {
   description = "Boolean flag to enable hostnames in vpc"
-  default     = "true"
+  default     = true
 }
 variable "enable_vpc_dns" {
   description = "Boolean flag to enable dns in VPC"
-  default     = "true"
+  default     = true
 }
 
 variable "create_ecr_vpc_endpoint" {
   description = "Boolean flag to enable the creation of ECR vpc endpoints"
-  default = "true"
+  default = true
 }
 
 
