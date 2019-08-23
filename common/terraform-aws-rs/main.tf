@@ -7,13 +7,9 @@ terraform {
 # S3 bucket to store terraform state file
 resource "aws_s3_bucket" "tf_state_storage_s3" {
   bucket = "${var.s3_bucket_name}"
-
-  versioning {
-    enabled = true
-  }
-
+  
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
   server_side_encryption_configuration {
