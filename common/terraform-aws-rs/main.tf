@@ -4,6 +4,7 @@ terraform {
     aws = ">= 2.20.0"
   }
 }
+
 # S3 bucket to store terraform state file
 resource "aws_s3_bucket" "tf_state_storage_s3" {
   bucket = "${var.s3_bucket_name}"
@@ -11,7 +12,8 @@ resource "aws_s3_bucket" "tf_state_storage_s3" {
   lifecycle {
     prevent_destroy = false
   }
-
+  force_destroy = true
+  
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
