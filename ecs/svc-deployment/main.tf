@@ -1,3 +1,10 @@
+terraform {
+  required_version = "> 0.12.0"
+  required_providers {
+    aws = ">= 2.20.0"
+  }
+}
+
 locals {
   service_name = "${var.app_name}_service"
   task_name    = "${var.app_name}_task"
