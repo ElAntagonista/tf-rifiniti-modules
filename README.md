@@ -3,12 +3,11 @@
 # About
 This repository contains terraform modules used for creating a production ready AWS Fargate solution.
 
-
 # Modules list
 - [terraform-aws-rs](##terraform-aws-rs)
 - [vpc](##vpc)
 - [ecs-base](##ecs-base)
-- [svc_deployment](##svc_deployment)
+- [svc-deployment](##svc-deployment)
 # Modules
 
 ## terraform-aws-rs
@@ -30,7 +29,7 @@ Creates the foundational resources for the deployment of ECS services:
 - ECR repositories
 - IAM task execution role
 
-## svc_deployment
+## svc-deployment
 Creates the main resources for the deployment of an ECS service :
 - ECS task definition
 - ECS service definition
